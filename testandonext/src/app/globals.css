@@ -1,0 +1,31 @@
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: gray;
+  transition: 0.3s;
+}
+
+@layer components {
+  .cabecalho {
+    @apply bg-slate-500 text-white text-center p-4;
+  }
+  .rodape {
+    @apply bg-slate-500 text-white text-center p-4;
+  }
+}
