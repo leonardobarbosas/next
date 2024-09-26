@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "nome": "Smartphone",
+    "preco": 999,
+    "marca": "Samsung",
+    "modelo": "Galaxy S21",
+    "descricao": "Celular top de linha",
+    "imagem": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "nome": "Notebook",
+    "preco": 2999,
+    "marca": "Dell",
+    "modelo": "Inspiron 15",
+    "descricao": "Notebook para trabalho",
+    "imagem": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "nome": "Tablet",
+    "preco": 799,
+    "marca": "Apple",
+    "modelo": "iPad",
+    "descricao": "Tablet para estudos",
+    "imagem": "https://via.placeholder.com/150"
+  }
+]
