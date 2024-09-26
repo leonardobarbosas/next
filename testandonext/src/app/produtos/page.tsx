@@ -63,7 +63,7 @@ export default function Produtos() {
                 />
               </td>
               <td>
-                <Link href={`/produto/${produto.id}`}>Editar</Link>
+                <Link href={`/produtos/produto/${produto.id}`}>Editar</Link>
               </td>
             </tr>
           ))}
