@@ -20,16 +20,8 @@ export default function Produto({ params }: { params: { id: number } }) {
   return (
     <div>
       <h1>Produto</h1>
-      {produto && (
-        <div>
-          <h2>{produto.nome}</h2>
-          <p>Preço: {produto.preco}</p>
-          <p>Marca: {produto.marca}</p>
-          <p>Modelo: {produto.modelo}</p>
-          <p>Descrição: {produto.descricao}</p>
-          <img src={produto.imagem} alt={produto.nome} height="100" width="100" />
-        </div>
-      )}
+      <p>ID: {produto?.id}</p>
+      <p>Nome: {produto?.nome}</p>
     </div>
   );
 }
