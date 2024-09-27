@@ -1,35 +1,20 @@
+"use client";
+import { TipoProduto } from "@/types";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Produtos() {
-  const produtos = [
-    {
-      id: 1,
-      nome: "Smartphone",
-      preco: 999,
-      marca: "Samsung",
-      modelo: "Galaxy S21",
-      descricao: "Celular top de linha",
-      imagem: "https://via.placeholder.com/150",
-    },
-    {
-      id: 2,
-      nome: "Notebook",
-      preco: 2999,
-      marca: "Dell",
-      modelo: "Inspiron 15",
-      descricao: "Notebook para trabalho",
-      imagem: "https://via.placeholder.com/150",
-    },
-    {
-      id: 3,
-      nome: "Tablet",
-      preco: 799,
-      marca: "Apple",
-      modelo: "iPad",
-      descricao: "Tablet para estudos",
-      imagem: "https://via.placeholder.com/150",
-    },
-  ];
+  const [produtos, setProdutos] = useState<TipoProduto[]>([]);
+
+  useEffect(() => {
+    const chamadaDaApi = async () => {
+      const response = await fetch("http://localhost:3000/api/base-produtos");
+      const dados = await response.json();
+      setProdutos(dados);
+    };
+
+    chamadaDaApi();
+  }, []);
 
   return (
     <div>

@@ -3,6 +3,7 @@ export type TipoProduto = {
   nome: string;
   preco: number;
   marca: string;
+  modelo: string;
   descricao: string;
   imagem: string;
 };
